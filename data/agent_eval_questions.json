@@ -1,0 +1,26 @@
+[
+  {
+    "question": "有哪些未解决工单？",
+    "expected_intent": "ticket_analysis",
+    "expected_tools": ["unresolved_tickets"],
+    "expected_answer_keywords": ["未解决"]
+  },
+  {
+    "question": "统计高频问题和低满意度投诉，并给出分析建议。",
+    "expected_intent": "ticket_analysis",
+    "expected_tools": ["top_issue_types", "low_satisfaction_tickets", "ticket_ai_report"],
+    "expected_answer_keywords": ["高频", "满意度"]
+  },
+  {
+    "question": "分析投诉问题，并结合知识库给出客服处理建议。",
+    "expected_intent": "ticket_knowledge_analysis",
+    "expected_tools": ["top_issue_types", "low_satisfaction_tickets", "knowledge_base_rag"],
+    "expected_answer_keywords": ["参考来源"]
+  },
+  {
+    "question": "RAG 包含哪些步骤？",
+    "expected_intent": "knowledge_qa",
+    "expected_tools": ["knowledge_base_rag"],
+    "expected_answer_keywords": ["来源"]
+  }
+]

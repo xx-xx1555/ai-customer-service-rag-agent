@@ -1,0 +1,128 @@
+[
+  {
+    "question": "用户问题进入第二阶段检索链路后，会形成哪两路候选，之后经过哪三步融合？",
+    "expected_source": "PHASE2_GUIDE.md",
+    "expected_keywords": [
+      "query embedding",
+      "dense top-k",
+      "BM25",
+      "lexical top-k",
+      "合并、归一化、加权融合"
+    ]
+  },
+  {
+    "question": "第二阶段新增的 Embedding 服务、Qdrant Repository 和检索测试分别位于哪些文件？",
+    "expected_source": "PHASE2_GUIDE.md",
+    "expected_keywords": [
+      "embedding_service.py",
+      "qdrant_repository.py",
+      "test_phase2_retrieval.py"
+    ]
+  },
+  {
+    "question": "LangGraph 的 AgentState 保存了哪些关键状态字段？",
+    "expected_source": "PHASE3_GUIDE.md",
+    "expected_keywords": [
+      "question",
+      "intent",
+      "plan",
+      "selected_tools",
+      "tool_results",
+      "answer"
+    ]
+  },
+  {
+    "question": "FAQ 候选工具会生成什么，为什么不能自动生成标准答案？",
+    "expected_source": "PHASE3_GUIDE.md",
+    "expected_keywords": [
+      "create_faq_candidates",
+      "只生成候选问题和证据",
+      "不自动编造标准答案",
+      "知识库管理员确认"
+    ]
+  },
+  {
+    "question": "第四阶段新增了哪些核心数据表？",
+    "expected_source": "PHASE4_GUIDE.md",
+    "expected_keywords": [
+      "tickets",
+      "documents",
+      "chat_sessions",
+      "chat_messages",
+      "evaluation_runs"
+    ]
+  },
+  {
+    "question": "文档上传、RAG 问答和评测结果分别会被持久化到哪些业务记录？",
+    "expected_source": "PHASE4_GUIDE.md",
+    "expected_keywords": [
+      "上传文档后写入",
+      "documents",
+      "RAG 问答保存",
+      "chat_sessions",
+      "chat_messages",
+      "evaluation_runs"
+    ]
+  },
+  {
+    "question": "工单列表接口支持哪些筛选条件和分页参数？",
+    "expected_source": "PHASE4_GUIDE.md",
+    "expected_keywords": [
+      "status",
+      "issue_type",
+      "satisfaction_lte",
+      "date_from",
+      "date_to",
+      "keyword",
+      "page",
+      "page_size"
+    ]
+  },
+  {
+    "question": "前端知识库页面提供了哪些文档管理、检索和问答功能？",
+    "expected_source": "PHASE5_GUIDE.md",
+    "expected_keywords": [
+      "上传与删除文档",
+      "重建 Qdrant 索引",
+      "Dense/BM25/Hybrid 检索调试",
+      "RAG 问答",
+      "会话历史与继续对话"
+    ]
+  },
+  {
+    "question": "前端 Agent 页面能够展示哪些规划和执行信息？",
+    "expected_source": "PHASE5_GUIDE.md",
+    "expected_keywords": [
+      "多工具规划",
+      "工具执行轨迹",
+      "工具原始结果",
+      "引用来源"
+    ]
+  },
+  {
+    "question": "PostgreSQL 和 Qdrant 在这个项目中分别负责管理什么数据？",
+    "expected_source": "README.md",
+    "expected_keywords": [
+      "PostgreSQL 管理结构化业务数据",
+      "Qdrant 管理知识库向量与片段 metadata"
+    ]
+  },
+  {
+    "question": "标记 Embedding 和模型中间隐藏状态有什么区别？",
+    "expected_source": "12333.txt",
+    "expected_keywords": [
+      "标记Embedding是静态的",
+      "中间隐藏状态",
+      "完整上下文"
+    ]
+  },
+  {
+    "question": "FastAPI 如何定义请求响应模型并自动生成接口文档？",
+    "expected_source": "test_knowledge.txt",
+    "expected_keywords": [
+      "FastAPI",
+      "Pydantic",
+      "Swagger"
+    ]
+  }
+]

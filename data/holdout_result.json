@@ -1,0 +1,933 @@
+﻿{
+    "top_k":  3,
+    "results":  {
+                    "bm25":  {
+                                 "evidence_hit_rate_at_k":  0.75,
+                                 "evidence_mrr_at_k":  0.6667,
+                                 "avg_evidence_keyword_coverage":  0.75,
+                                 "mode":  "bm25",
+                                 "rerank":  false,
+                                 "pipeline":  "bm25",
+                                 "total":  12,
+                                 "source_hit_rate":  1.0,
+                                 "hit_rate_at_k":  1.0,
+                                 "mrr_at_k":  0.8194,
+                                 "avg_keyword_coverage":  0.75,
+                                 "avg_top_score":  1.0,
+                                 "cases":  [
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "ç¨æ·é®é¢è¿å\u0085¥ç¬¬äºé¶æ®µæ£ç´¢é¾è·¯åï¼ä¼å½¢æåªä¸¤è·¯åéï¼ä¹åç»è¿åªä¸æ­¥èåï¼",
+                                                   "expected_source":  "PHASE2_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "PHASE2_GUIDE.md#chunk-2",
+                                                                       "PHASE3_GUIDE.md#chunk-2",
+                                                                       "test_knowledge.txt#chunk-3"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  false,
+                                                   "evidence_rank":  null,
+                                                   "evidence_reciprocal_rank":  0.0,
+                                                   "evidence_keyword_coverage":  0.0,
+                                                   "question":  "ç¬¬äºé¶æ®µæ°å¢ç Embedding æå¡ãQdrant Repository åæ£ç´¢æµè¯åå«ä½äºåªäºæä»¶ï¼",
+                                                   "expected_source":  "PHASE2_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  2,
+                                                   "reciprocal_rank":  0.5,
+                                                   "keyword_coverage":  0.0,
+                                                   "top_sources":  [
+                                                                       "README.md#chunk-1",
+                                                                       "PHASE2_GUIDE.md#chunk-1",
+                                                                       "README.md#chunk-3"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "LangGraph ç AgentState ä¿å­äºåªäºå\u0085³é®ç¶æå­æ®µï¼",
+                                                   "expected_source":  "PHASE3_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "PHASE3_GUIDE.md#chunk-8",
+                                                                       "12333.txt#chunk-4",
+                                                                       "README.md#chunk-20"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "FAQ åéå·¥å\u0085·ä¼çæä»ä¹ï¼ä¸ºä»ä¹ä¸è½èªå¨çææ åç­æ¡ï¼",
+                                                   "expected_source":  "PHASE3_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "PHASE3_GUIDE.md#chunk-11",
+                                                                       "PHASE3_GUIDE.md#chunk-2",
+                                                                       "test_knowledge.txt#chunk-1"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  false,
+                                                   "evidence_rank":  null,
+                                                   "evidence_reciprocal_rank":  0.0,
+                                                   "evidence_keyword_coverage":  0.0,
+                                                   "question":  "ç¬¬åé¶æ®µæ°å¢äºåªäºæ ¸å¿æ°æ®è¡¨ï¼",
+                                                   "expected_source":  "PHASE4_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  0.0,
+                                                   "top_sources":  [
+                                                                       "PHASE4_GUIDE.md#chunk-7",
+                                                                       "PHASE4_GUIDE.md#chunk-1",
+                                                                       "test_knowledge.txt#chunk-1"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "ææ¡£ä¸ä¼ ãRAG é®ç­åè¯æµç»æåå«ä¼è¢«æä¹\u0085åå°åªäºä¸å¡è®°å½ï¼",
+                                                   "expected_source":  "PHASE4_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "PHASE4_GUIDE.md#chunk-9",
+                                                                       "PHASE4_GUIDE.md#chunk-2",
+                                                                       "README.md#chunk-4"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  2,
+                                                   "evidence_reciprocal_rank":  0.5,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "å·¥ååè¡¨æ¥å£æ¯æåªäºç­éæ¡ä»¶ååé¡µåæ°ï¼",
+                                                   "expected_source":  "PHASE4_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  2,
+                                                   "reciprocal_rank":  0.5,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "README.md#chunk-16",
+                                                                       "PHASE4_GUIDE.md#chunk-8",
+                                                                       "README.md#chunk-4"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  2,
+                                                   "evidence_reciprocal_rank":  0.5,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "åç«¯ç¥è¯åºé¡µé¢æä¾äºåªäºææ¡£ç®¡çãæ£ç´¢åé®ç­åè½ï¼",
+                                                   "expected_source":  "PHASE5_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  2,
+                                                   "reciprocal_rank":  0.5,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "README.md#chunk-2",
+                                                                       "PHASE5_GUIDE.md#chunk-6",
+                                                                       "README.md#chunk-5"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "åç«¯ Agent é¡µé¢è½å¤å±ç¤ºåªäºè§ååæ§è¡ä¿¡æ¯ï¼",
+                                                   "expected_source":  "PHASE5_GUIDE.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "PHASE5_GUIDE.md#chunk-7",
+                                                                       "README.md#chunk-1",
+                                                                       "README.md#chunk-22"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  false,
+                                                   "evidence_rank":  null,
+                                                   "evidence_reciprocal_rank":  0.0,
+                                                   "evidence_keyword_coverage":  0.0,
+                                                   "question":  "PostgreSQL å Qdrant å¨è¿ä¸ªé¡¹ç®ä¸­åå«è´è´£ç®¡çä»ä¹æ°æ®ï¼",
+                                                   "expected_source":  "README.md",
+                                                   "hit_source":  true,
+                                                   "source_rank":  3,
+                                                   "reciprocal_rank":  0.3333,
+                                                   "keyword_coverage":  0.0,
+                                                   "top_sources":  [
+                                                                       "PHASE4_GUIDE.md#chunk-6",
+                                                                       "12333.txt#chunk-1",
+                                                                       "README.md#chunk-1"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "æ è®° Embedding åæ¨¡åä¸­é´éèç¶ææä»ä¹åºå«ï¼",
+                                                   "expected_source":  "12333.txt",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "12333.txt#chunk-4",
+                                                                       "12333.txt#chunk-1",
+                                                                       "README.md#chunk-9"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               },
+                                               {
+                                                   "evidence_hit":  true,
+                                                   "evidence_rank":  1,
+                                                   "evidence_reciprocal_rank":  1.0,
+                                                   "evidence_keyword_coverage":  1.0,
+                                                   "question":  "FastAPI å¦ä½å®ä¹è¯·æ±ååºæ¨¡åå¹¶èªå¨çææ¥å£ææ¡£ï¼",
+                                                   "expected_source":  "test_knowledge.txt",
+                                                   "hit_source":  true,
+                                                   "source_rank":  1,
+                                                   "reciprocal_rank":  1.0,
+                                                   "keyword_coverage":  1.0,
+                                                   "top_sources":  [
+                                                                       "test_knowledge.txt#chunk-6",
+                                                                       "README.md#chunk-6",
+                                                                       "12333.txt#chunk-1"
+                                                                   ],
+                                                   "top_score":  1.0
+                                               }
+                                           ]
+                             },
+                    "dense":  {
+                                  "evidence_hit_rate_at_k":  0.5833,
+                                  "evidence_mrr_at_k":  0.5,
+                                  "avg_evidence_keyword_coverage":  0.5833,
+                                  "mode":  "dense",
+                                  "rerank":  false,
+                                  "pipeline":  "dense",
+                                  "total":  12,
+                                  "source_hit_rate":  0.75,
+                                  "hit_rate_at_k":  0.75,
+                                  "mrr_at_k":  0.6111,
+                                  "avg_keyword_coverage":  0.6583,
+                                  "avg_top_score":  1.0,
+                                  "cases":  [
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  2,
+                                                    "evidence_reciprocal_rank":  0.5,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "ç¨æ·é®é¢è¿å\u0085¥ç¬¬äºé¶æ®µæ£ç´¢é¾è·¯åï¼ä¼å½¢æåªä¸¤è·¯åéï¼ä¹åç»è¿åªä¸æ­¥èåï¼",
+                                                    "expected_source":  "PHASE2_GUIDE.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  2,
+                                                    "reciprocal_rank":  0.5,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "PHASE3_GUIDE.md#chunk-2",
+                                                                        "PHASE2_GUIDE.md#chunk-2",
+                                                                        "test_knowledge.txt#chunk-4"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  2,
+                                                    "evidence_reciprocal_rank":  0.5,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "ç¬¬äºé¶æ®µæ°å¢ç Embedding æå¡ãQdrant Repository åæ£ç´¢æµè¯åå«ä½äºåªäºæä»¶ï¼",
+                                                    "expected_source":  "PHASE2_GUIDE.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  1,
+                                                    "reciprocal_rank":  1.0,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "PHASE2_GUIDE.md#chunk-1",
+                                                                        "PHASE2_GUIDE.md#chunk-3",
+                                                                        "12333.txt#chunk-4"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  1,
+                                                    "evidence_reciprocal_rank":  1.0,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "LangGraph ç AgentState ä¿å­äºåªäºå\u0085³é®ç¶æå­æ®µï¼",
+                                                    "expected_source":  "PHASE3_GUIDE.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  1,
+                                                    "reciprocal_rank":  1.0,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "PHASE3_GUIDE.md#chunk-8",
+                                                                        "PHASE3_GUIDE.md#chunk-2",
+                                                                        "PHASE2_GUIDE.md#chunk-2"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  1,
+                                                    "evidence_reciprocal_rank":  1.0,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "FAQ åéå·¥å\u0085·ä¼çæä»ä¹ï¼ä¸ºä»ä¹ä¸è½èªå¨çææ åç­æ¡ï¼",
+                                                    "expected_source":  "PHASE3_GUIDE.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  1,
+                                                    "reciprocal_rank":  1.0,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "PHASE3_GUIDE.md#chunk-11",
+                                                                        "PHASE3_GUIDE.md#chunk-2",
+                                                                        "PHASE3_GUIDE.md#chunk-9"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  false,
+                                                    "evidence_rank":  null,
+                                                    "evidence_reciprocal_rank":  0.0,
+                                                    "evidence_keyword_coverage":  0.0,
+                                                    "question":  "ç¬¬åé¶æ®µæ°å¢äºåªäºæ ¸å¿æ°æ®è¡¨ï¼",
+                                                    "expected_source":  "PHASE4_GUIDE.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  2,
+                                                    "reciprocal_rank":  0.5,
+                                                    "keyword_coverage":  0.0,
+                                                    "top_sources":  [
+                                                                        "README.md#chunk-3",
+                                                                        "PHASE4_GUIDE.md#chunk-3",
+                                                                        "PHASE4_GUIDE.md#chunk-1"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  1,
+                                                    "evidence_reciprocal_rank":  1.0,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "ææ¡£ä¸ä¼ ãRAG é®ç­åè¯æµç»æåå«ä¼è¢«æä¹\u0085åå°åªäºä¸å¡è®°å½ï¼",
+                                                    "expected_source":  "PHASE4_GUIDE.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  1,
+                                                    "reciprocal_rank":  1.0,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "PHASE4_GUIDE.md#chunk-9",
+                                                                        "test_knowledge.txt#chunk-2",
+                                                                        "README.md#chunk-20"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  false,
+                                                    "evidence_rank":  null,
+                                                    "evidence_reciprocal_rank":  0.0,
+                                                    "evidence_keyword_coverage":  0.0,
+                                                    "question":  "å·¥ååè¡¨æ¥å£æ¯æåªäºç­éæ¡ä»¶ååé¡µåæ°ï¼",
+                                                    "expected_source":  "PHASE4_GUIDE.md",
+                                                    "hit_source":  false,
+                                                    "source_rank":  null,
+                                                    "reciprocal_rank":  0.0,
+                                                    "keyword_coverage":  0.5,
+                                                    "top_sources":  [
+                                                                        "PHASE3_GUIDE.md#chunk-2",
+                                                                        "README.md#chunk-16",
+                                                                        "PHASE5_GUIDE.md#chunk-8"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  false,
+                                                    "evidence_rank":  null,
+                                                    "evidence_reciprocal_rank":  0.0,
+                                                    "evidence_keyword_coverage":  0.0,
+                                                    "question":  "åç«¯ç¥è¯åºé¡µé¢æä¾äºåªäºææ¡£ç®¡çãæ£ç´¢åé®ç­åè½ï¼",
+                                                    "expected_source":  "PHASE5_GUIDE.md",
+                                                    "hit_source":  false,
+                                                    "source_rank":  null,
+                                                    "reciprocal_rank":  0.0,
+                                                    "keyword_coverage":  0.4,
+                                                    "top_sources":  [
+                                                                        "README.md#chunk-17",
+                                                                        "README.md#chunk-7",
+                                                                        "README.md#chunk-5"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  false,
+                                                    "evidence_rank":  null,
+                                                    "evidence_reciprocal_rank":  0.0,
+                                                    "evidence_keyword_coverage":  0.0,
+                                                    "question":  "åç«¯ Agent é¡µé¢è½å¤å±ç¤ºåªäºè§ååæ§è¡ä¿¡æ¯ï¼",
+                                                    "expected_source":  "PHASE5_GUIDE.md",
+                                                    "hit_source":  false,
+                                                    "source_rank":  null,
+                                                    "reciprocal_rank":  0.0,
+                                                    "keyword_coverage":  0.0,
+                                                    "top_sources":  [
+                                                                        "README.md#chunk-5",
+                                                                        "README.md#chunk-1",
+                                                                        "PHASE3_GUIDE.md#chunk-2"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  false,
+                                                    "evidence_rank":  null,
+                                                    "evidence_reciprocal_rank":  0.0,
+                                                    "evidence_keyword_coverage":  0.0,
+                                                    "question":  "PostgreSQL å Qdrant å¨è¿ä¸ªé¡¹ç®ä¸­åå«è´è´£ç®¡çä»ä¹æ°æ®ï¼",
+                                                    "expected_source":  "README.md",
+                                                    "hit_source":  true,
+                                                    "source_rank":  3,
+                                                    "reciprocal_rank":  0.3333,
+                                                    "keyword_coverage":  0.0,
+                                                    "top_sources":  [
+                                                                        "PHASE4_GUIDE.md#chunk-6",
+                                                                        "PHASE4_GUIDE.md#chunk-1",
+                                                                        "README.md#chunk-20"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  1,
+                                                    "evidence_reciprocal_rank":  1.0,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "æ è®° Embedding åæ¨¡åä¸­é´éèç¶ææä»ä¹åºå«ï¼",
+                                                    "expected_source":  "12333.txt",
+                                                    "hit_source":  true,
+                                                    "source_rank":  1,
+                                                    "reciprocal_rank":  1.0,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "12333.txt#chunk-4",
+                                                                        "test_knowledge.txt#chunk-3",
+                                                                        "12333.txt#chunk-2"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                },
+                                                {
+                                                    "evidence_hit":  true,
+                                                    "evidence_rank":  1,
+                                                    "evidence_reciprocal_rank":  1.0,
+                                                    "evidence_keyword_coverage":  1.0,
+                                                    "question":  "FastAPI å¦ä½å®ä¹è¯·æ±ååºæ¨¡åå¹¶èªå¨çææ¥å£ææ¡£ï¼",
+                                                    "expected_source":  "test_knowledge.txt",
+                                                    "hit_source":  true,
+                                                    "source_rank":  1,
+                                                    "reciprocal_rank":  1.0,
+                                                    "keyword_coverage":  1.0,
+                                                    "top_sources":  [
+                                                                        "test_knowledge.txt#chunk-6",
+                                                                        "test_knowledge.txt#chunk-2",
+                                                                        "PHASE2_GUIDE.md#chunk-6"
+                                                                    ],
+                                                    "top_score":  1.0
+                                                }
+                                            ]
+                              },
+                    "hybrid":  {
+                                   "evidence_hit_rate_at_k":  0.6667,
+                                   "evidence_mrr_at_k":  0.5139,
+                                   "avg_evidence_keyword_coverage":  0.6667,
+                                   "mode":  "hybrid",
+                                   "rerank":  false,
+                                   "pipeline":  "hybrid",
+                                   "total":  12,
+                                   "source_hit_rate":  0.8333,
+                                   "hit_rate_at_k":  0.8333,
+                                   "mrr_at_k":  0.6389,
+                                   "avg_keyword_coverage":  0.7417,
+                                   "avg_top_score":  0.9652,
+                                   "cases":  [
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  2,
+                                                     "evidence_reciprocal_rank":  0.5,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "ç¨æ·é®é¢è¿å\u0085¥ç¬¬äºé¶æ®µæ£ç´¢é¾è·¯åï¼ä¼å½¢æåªä¸¤è·¯åéï¼ä¹åç»è¿åªä¸æ­¥èåï¼",
+                                                     "expected_source":  "PHASE2_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  2,
+                                                     "reciprocal_rank":  0.5,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "PHASE3_GUIDE.md#chunk-2",
+                                                                         "PHASE2_GUIDE.md#chunk-2",
+                                                                         "test_knowledge.txt#chunk-4"
+                                                                     ],
+                                                     "top_score":  0.9798
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  3,
+                                                     "evidence_reciprocal_rank":  0.3333,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "ç¬¬äºé¶æ®µæ°å¢ç Embedding æå¡ãQdrant Repository åæ£ç´¢æµè¯åå«ä½äºåªäºæä»¶ï¼",
+                                                     "expected_source":  "PHASE2_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  1,
+                                                     "reciprocal_rank":  1.0,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "PHASE2_GUIDE.md#chunk-1",
+                                                                         "PHASE4_GUIDE.md#chunk-7",
+                                                                         "PHASE2_GUIDE.md#chunk-3"
+                                                                     ],
+                                                     "top_score":  0.9908
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  1,
+                                                     "evidence_reciprocal_rank":  1.0,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "LangGraph ç AgentState ä¿å­äºåªäºå\u0085³é®ç¶æå­æ®µï¼",
+                                                     "expected_source":  "PHASE3_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  1,
+                                                     "reciprocal_rank":  1.0,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "PHASE3_GUIDE.md#chunk-8",
+                                                                         "PHASE3_GUIDE.md#chunk-2",
+                                                                         "README.md#chunk-20"
+                                                                     ],
+                                                     "top_score":  1.0
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  1,
+                                                     "evidence_reciprocal_rank":  1.0,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "FAQ åéå·¥å\u0085·ä¼çæä»ä¹ï¼ä¸ºä»ä¹ä¸è½èªå¨çææ åç­æ¡ï¼",
+                                                     "expected_source":  "PHASE3_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  1,
+                                                     "reciprocal_rank":  1.0,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "PHASE3_GUIDE.md#chunk-11",
+                                                                         "PHASE3_GUIDE.md#chunk-2",
+                                                                         "PHASE3_GUIDE.md#chunk-9"
+                                                                     ],
+                                                     "top_score":  1.0
+                                                 },
+                                                 {
+                                                     "evidence_hit":  false,
+                                                     "evidence_rank":  null,
+                                                     "evidence_reciprocal_rank":  0.0,
+                                                     "evidence_keyword_coverage":  0.0,
+                                                     "question":  "ç¬¬åé¶æ®µæ°å¢äºåªäºæ ¸å¿æ°æ®è¡¨ï¼",
+                                                     "expected_source":  "PHASE4_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  2,
+                                                     "reciprocal_rank":  0.5,
+                                                     "keyword_coverage":  0.0,
+                                                     "top_sources":  [
+                                                                         "README.md#chunk-3",
+                                                                         "PHASE4_GUIDE.md#chunk-1",
+                                                                         "PHASE4_GUIDE.md#chunk-3"
+                                                                     ],
+                                                     "top_score":  0.8951
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  1,
+                                                     "evidence_reciprocal_rank":  1.0,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "ææ¡£ä¸ä¼ ãRAG é®ç­åè¯æµç»æåå«ä¼è¢«æä¹\u0085åå°åªäºä¸å¡è®°å½ï¼",
+                                                     "expected_source":  "PHASE4_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  1,
+                                                     "reciprocal_rank":  1.0,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "PHASE4_GUIDE.md#chunk-9",
+                                                                         "test_knowledge.txt#chunk-2",
+                                                                         "README.md#chunk-20"
+                                                                     ],
+                                                     "top_score":  1.0
+                                                 },
+                                                 {
+                                                     "evidence_hit":  false,
+                                                     "evidence_rank":  null,
+                                                     "evidence_reciprocal_rank":  0.0,
+                                                     "evidence_keyword_coverage":  0.0,
+                                                     "question":  "å·¥ååè¡¨æ¥å£æ¯æåªäºç­éæ¡ä»¶ååé¡µåæ°ï¼",
+                                                     "expected_source":  "PHASE4_GUIDE.md",
+                                                     "hit_source":  false,
+                                                     "source_rank":  null,
+                                                     "reciprocal_rank":  0.0,
+                                                     "keyword_coverage":  0.5,
+                                                     "top_sources":  [
+                                                                         "README.md#chunk-16",
+                                                                         "PHASE3_GUIDE.md#chunk-2",
+                                                                         "PHASE2_GUIDE.md#chunk-6"
+                                                                     ],
+                                                     "top_score":  0.9283
+                                                 },
+                                                 {
+                                                     "evidence_hit":  false,
+                                                     "evidence_rank":  null,
+                                                     "evidence_reciprocal_rank":  0.0,
+                                                     "evidence_keyword_coverage":  0.0,
+                                                     "question":  "åç«¯ç¥è¯åºé¡µé¢æä¾äºåªäºææ¡£ç®¡çãæ£ç´¢åé®ç­åè½ï¼",
+                                                     "expected_source":  "PHASE5_GUIDE.md",
+                                                     "hit_source":  false,
+                                                     "source_rank":  null,
+                                                     "reciprocal_rank":  0.0,
+                                                     "keyword_coverage":  0.4,
+                                                     "top_sources":  [
+                                                                         "README.md#chunk-17",
+                                                                         "README.md#chunk-5",
+                                                                         "README.md#chunk-1"
+                                                                     ],
+                                                     "top_score":  0.9031
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  3,
+                                                     "evidence_reciprocal_rank":  0.3333,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "åç«¯ Agent é¡µé¢è½å¤å±ç¤ºåªäºè§ååæ§è¡ä¿¡æ¯ï¼",
+                                                     "expected_source":  "PHASE5_GUIDE.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  3,
+                                                     "reciprocal_rank":  0.3333,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "README.md#chunk-5",
+                                                                         "README.md#chunk-1",
+                                                                         "PHASE5_GUIDE.md#chunk-7"
+                                                                     ],
+                                                     "top_score":  0.885
+                                                 },
+                                                 {
+                                                     "evidence_hit":  false,
+                                                     "evidence_rank":  null,
+                                                     "evidence_reciprocal_rank":  0.0,
+                                                     "evidence_keyword_coverage":  0.0,
+                                                     "question":  "PostgreSQL å Qdrant å¨è¿ä¸ªé¡¹ç®ä¸­åå«è´è´£ç®¡çä»ä¹æ°æ®ï¼",
+                                                     "expected_source":  "README.md",
+                                                     "hit_source":  true,
+                                                     "source_rank":  3,
+                                                     "reciprocal_rank":  0.3333,
+                                                     "keyword_coverage":  0.0,
+                                                     "top_sources":  [
+                                                                         "PHASE4_GUIDE.md#chunk-6",
+                                                                         "PHASE4_GUIDE.md#chunk-1",
+                                                                         "README.md#chunk-20"
+                                                                     ],
+                                                     "top_score":  1.0
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  1,
+                                                     "evidence_reciprocal_rank":  1.0,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "æ è®° Embedding åæ¨¡åä¸­é´éèç¶ææä»ä¹åºå«ï¼",
+                                                     "expected_source":  "12333.txt",
+                                                     "hit_source":  true,
+                                                     "source_rank":  1,
+                                                     "reciprocal_rank":  1.0,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "12333.txt#chunk-4",
+                                                                         "12333.txt#chunk-1",
+                                                                         "test_knowledge.txt#chunk-3"
+                                                                     ],
+                                                     "top_score":  1.0
+                                                 },
+                                                 {
+                                                     "evidence_hit":  true,
+                                                     "evidence_rank":  1,
+                                                     "evidence_reciprocal_rank":  1.0,
+                                                     "evidence_keyword_coverage":  1.0,
+                                                     "question":  "FastAPI å¦ä½å®ä¹è¯·æ±ååºæ¨¡åå¹¶èªå¨çææ¥å£ææ¡£ï¼",
+                                                     "expected_source":  "test_knowledge.txt",
+                                                     "hit_source":  true,
+                                                     "source_rank":  1,
+                                                     "reciprocal_rank":  1.0,
+                                                     "keyword_coverage":  1.0,
+                                                     "top_sources":  [
+                                                                         "test_knowledge.txt#chunk-6",
+                                                                         "test_knowledge.txt#chunk-2",
+                                                                         "PHASE2_GUIDE.md#chunk-6"
+                                                                     ],
+                                                     "top_score":  1.0
+                                                 }
+                                             ]
+                               },
+                    "hybrid_rerank":  {
+                                          "evidence_hit_rate_at_k":  0.8333,
+                                          "evidence_mrr_at_k":  0.7917,
+                                          "avg_evidence_keyword_coverage":  0.8333,
+                                          "mode":  "hybrid",
+                                          "rerank":  true,
+                                          "pipeline":  "hybrid+rerank",
+                                          "total":  12,
+                                          "source_hit_rate":  0.9167,
+                                          "hit_rate_at_k":  0.9167,
+                                          "mrr_at_k":  0.875,
+                                          "avg_keyword_coverage":  0.85,
+                                          "avg_top_score":  0.9685,
+                                          "cases":  [
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "ç¨æ·é®é¢è¿å\u0085¥ç¬¬äºé¶æ®µæ£ç´¢é¾è·¯åï¼ä¼å½¢æåªä¸¤è·¯åéï¼ä¹åç»è¿åªä¸æ­¥èåï¼",
+                                                            "expected_source":  "PHASE2_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE2_GUIDE.md#chunk-2",
+                                                                                "PHASE3_GUIDE.md#chunk-2",
+                                                                                "PHASE2_GUIDE.md#chunk-3"
+                                                                            ],
+                                                            "top_score":  0.9728
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "ç¬¬äºé¶æ®µæ°å¢ç Embedding æå¡ãQdrant Repository åæ£ç´¢æµè¯åå«ä½äºåªäºæä»¶ï¼",
+                                                            "expected_source":  "PHASE2_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE2_GUIDE.md#chunk-3",
+                                                                                "PHASE2_GUIDE.md#chunk-1",
+                                                                                "README.md#chunk-1"
+                                                                            ],
+                                                            "top_score":  0.9044
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "LangGraph ç AgentState ä¿å­äºåªäºå\u0085³é®ç¶æå­æ®µï¼",
+                                                            "expected_source":  "PHASE3_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE3_GUIDE.md#chunk-8",
+                                                                                "PHASE3_GUIDE.md#chunk-2",
+                                                                                "README.md#chunk-20"
+                                                                            ],
+                                                            "top_score":  1.0
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "FAQ åéå·¥å\u0085·ä¼çæä»ä¹ï¼ä¸ºä»ä¹ä¸è½èªå¨çææ åç­æ¡ï¼",
+                                                            "expected_source":  "PHASE3_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE3_GUIDE.md#chunk-11",
+                                                                                "PHASE3_GUIDE.md#chunk-2",
+                                                                                "test_knowledge.txt#chunk-5"
+                                                                            ],
+                                                            "top_score":  1.0
+                                                        },
+                                                        {
+                                                            "evidence_hit":  false,
+                                                            "evidence_rank":  null,
+                                                            "evidence_reciprocal_rank":  0.0,
+                                                            "evidence_keyword_coverage":  0.0,
+                                                            "question":  "ç¬¬åé¶æ®µæ°å¢äºåªäºæ ¸å¿æ°æ®è¡¨ï¼",
+                                                            "expected_source":  "PHASE4_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  0.0,
+                                                            "top_sources":  [
+                                                                                "PHASE4_GUIDE.md#chunk-1",
+                                                                                "PHASE2_GUIDE.md#chunk-3",
+                                                                                "PHASE4_GUIDE.md#chunk-5"
+                                                                            ],
+                                                            "top_score":  0.9416
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "ææ¡£ä¸ä¼ ãRAG é®ç­åè¯æµç»æåå«ä¼è¢«æä¹\u0085åå°åªäºä¸å¡è®°å½ï¼",
+                                                            "expected_source":  "PHASE4_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE4_GUIDE.md#chunk-9",
+                                                                                "PHASE4_GUIDE.md#chunk-2",
+                                                                                "README.md#chunk-4"
+                                                                            ],
+                                                            "top_score":  1.0
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "å·¥ååè¡¨æ¥å£æ¯æåªäºç­éæ¡ä»¶ååé¡µåæ°ï¼",
+                                                            "expected_source":  "PHASE4_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE4_GUIDE.md#chunk-8",
+                                                                                "README.md#chunk-16",
+                                                                                "README.md#chunk-4"
+                                                                            ],
+                                                            "top_score":  0.8892
+                                                        },
+                                                        {
+                                                            "evidence_hit":  false,
+                                                            "evidence_rank":  null,
+                                                            "evidence_reciprocal_rank":  0.0,
+                                                            "evidence_keyword_coverage":  0.0,
+                                                            "question":  "åç«¯ç¥è¯åºé¡µé¢æä¾äºåªäºææ¡£ç®¡çãæ£ç´¢åé®ç­åè½ï¼",
+                                                            "expected_source":  "PHASE5_GUIDE.md",
+                                                            "hit_source":  false,
+                                                            "source_rank":  null,
+                                                            "reciprocal_rank":  0.0,
+                                                            "keyword_coverage":  0.2,
+                                                            "top_sources":  [
+                                                                                "README.md#chunk-5",
+                                                                                "README.md#chunk-2",
+                                                                                "README.md#chunk-22"
+                                                                            ],
+                                                            "top_score":  0.971
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "åç«¯ Agent é¡µé¢è½å¤å±ç¤ºåªäºè§ååæ§è¡ä¿¡æ¯ï¼",
+                                                            "expected_source":  "PHASE5_GUIDE.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE5_GUIDE.md#chunk-7",
+                                                                                "README.md#chunk-22",
+                                                                                "PHASE3_GUIDE.md#chunk-2"
+                                                                            ],
+                                                            "top_score":  0.9458
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  2,
+                                                            "evidence_reciprocal_rank":  0.5,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "PostgreSQL å Qdrant å¨è¿ä¸ªé¡¹ç®ä¸­åå«è´è´£ç®¡çä»ä¹æ°æ®ï¼",
+                                                            "expected_source":  "README.md",
+                                                            "hit_source":  true,
+                                                            "source_rank":  2,
+                                                            "reciprocal_rank":  0.5,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "PHASE4_GUIDE.md#chunk-6",
+                                                                                "README.md#chunk-2",
+                                                                                "README.md#chunk-20"
+                                                                            ],
+                                                            "top_score":  0.9968
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "æ è®° Embedding åæ¨¡åä¸­é´éèç¶ææä»ä¹åºå«ï¼",
+                                                            "expected_source":  "12333.txt",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "12333.txt#chunk-4",
+                                                                                "12333.txt#chunk-2",
+                                                                                "12333.txt#chunk-1"
+                                                                            ],
+                                                            "top_score":  1.0
+                                                        },
+                                                        {
+                                                            "evidence_hit":  true,
+                                                            "evidence_rank":  1,
+                                                            "evidence_reciprocal_rank":  1.0,
+                                                            "evidence_keyword_coverage":  1.0,
+                                                            "question":  "FastAPI å¦ä½å®ä¹è¯·æ±ååºæ¨¡åå¹¶èªå¨çææ¥å£ææ¡£ï¼",
+                                                            "expected_source":  "test_knowledge.txt",
+                                                            "hit_source":  true,
+                                                            "source_rank":  1,
+                                                            "reciprocal_rank":  1.0,
+                                                            "keyword_coverage":  1.0,
+                                                            "top_sources":  [
+                                                                                "test_knowledge.txt#chunk-6",
+                                                                                "README.md#chunk-6",
+                                                                                "README.md#chunk-1"
+                                                                            ],
+                                                            "top_score":  1.0
+                                                        }
+                                                    ]
+                                      }
+                }
+}

@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.pytest_cache/
+*.log
+qdrant_storage/
+postgres_data/
+.cache/
+data/app.db
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.zip
+
+# 本地学习记录与练习，不属于公开项目交付物
+baseline_report.md
+practie/

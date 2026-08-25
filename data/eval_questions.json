@@ -1,0 +1,74 @@
+[
+  {
+    "question": "第二阶段使用的具体 BGE 模型名称是什么？",
+    "expected_source": "PHASE2_GUIDE.md",
+    "expected_keywords": ["BAAI/bge-small-zh-v1.5"]
+  },
+  {
+    "question": "上传 PDF 和 Markdown 后，系统分别保留了哪些用于定位原文的信息？",
+    "expected_source": "PHASE2_GUIDE.md",
+    "expected_keywords": ["PDF 保留页码", "Markdown 保留标题"]
+  },
+  {
+    "question": "为什么排序模型不能只接收最终需要的四个片段？",
+    "expected_source": "PHASE3_GUIDE.md",
+    "expected_keywords": ["不能只接收最终", "没有重新排序的空间"]
+  },
+  {
+    "question": "rerank_fallback_reason=unavailable 时，系统怎样降级？",
+    "expected_source": "PHASE3_GUIDE.md",
+    "expected_keywords": [
+      "rerank_applied=false",
+      "rerank_fallback_reason=unavailable",
+      "final_score=base_score"
+    ]
+  },
+  {
+    "question": "数据库为空时，什么配置会触发工单初始化？数据来自哪里？",
+    "expected_source": "PHASE4_GUIDE.md",
+    "expected_keywords": ["AUTO_SEED_TICKETS=true", "data/tickets.csv", "种子"]
+  },
+  {
+    "question": "Docker环境和自动化测试分别使用什么数据库？",
+    "expected_source": "PHASE4_GUIDE.md",
+    "expected_keywords": ["PostgreSQL", "SQLite 内存数据库"]
+  },
+  {
+    "question": "第五阶段如何把只能通过接口查看的系统变成完整产品原型？",
+    "expected_source": "PHASE5_GUIDE.md",
+    "expected_keywords": ["只能看 Swagger", "完整演示业务流程", "产品原型"]
+  },
+  {
+    "question": "前端评测中心能够比较哪四条检索管线？",
+    "expected_source": "PHASE5_GUIDE.md",
+    "expected_keywords": ["BM25", "Dense", "Hybrid", "Hybrid+Reranker"]
+  },
+  {
+    "question": "什么命令会同时清除数据库和 Qdrant 的持久化数据？",
+    "expected_source": "README.md",
+    "expected_keywords": ["docker compose down -v", "数据库", "Qdrant"]
+  },
+  {
+    "question": "除了文字，还有哪些类型的数据可以转换成 Embedding？",
+    "expected_source": "12333.txt",
+    "expected_keywords": ["图像", "音频", "图数据"]
+  },
+  {
+    "question": "一个智能体处理任务时通常会经历哪四个环节？",
+    "expected_source": "test_knowledge.txt",
+    "expected_keywords": ["意图识别", "工具选择", "工具调用", "结果汇总"]
+  },
+  {
+    "question": "知识库问答从接收文档到给出带来源答案，需要经过哪些主要步骤？",
+    "expected_source": "test_knowledge.txt",
+    "expected_keywords": [
+      "文档上传",
+      "Chunk 切分",
+      "向量化",
+      "向量检索",
+      "Prompt 拼接",
+      "大模型生成",
+      "来源追踪"
+    ]
+  }
+]

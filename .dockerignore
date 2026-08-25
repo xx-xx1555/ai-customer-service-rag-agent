@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.env
+*.zip
+*.patch
+qdrant_storage
+postgres_data
+.cache
+baseline_report.md
+practie
+data/holdout_result.json
